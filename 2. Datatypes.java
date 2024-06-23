@@ -29,5 +29,6 @@ public class Datatypes {
         System.out.println("The Byte Number is: " + num5);
 
         short num6 = 12323; // Stores whole numbers from -32,768 to 32,767
+        System.out.println("The Short Number is: " + num6);
     }
 }
