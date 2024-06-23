@@ -28,5 +28,17 @@ public class Condition {
                 break;
         }
 
+        String fruit = input.next();
+
+        // Enhanced Switch Case
+        switch(fruit) {
+            case "apple" -> System.out.println("Apple");
+            case "mango" -> System.out.println("Mango");
+            case "jackfruit" -> System.out.println("Jackfruit");
+            case "orange" -> System.out.println("Orange");
+            default -> System.out.println("Not Recognised");
+
+        }
+
     }
 }
