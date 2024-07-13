@@ -2,9 +2,6 @@ class Solution {
     public int search(int[] nums, int target) {
         int peak = find_peak(nums);
 
-        int ans = search(nums, 0, peak, target);
-        if (ans == -1) ans = search(nums, peak + 1, nums.length - 1, target);
-
         return ans;
     }
 
@@ -30,23 +27,3 @@ class Solution {
         }
         return -1;
     }
-
-    static int search(int[] nums, int l, int r, int target) {
-        if (l > r) return -1;
-
-        int ans = -1;
-        while (l <= r) {
-
-            int m = l + (r - l) / 2;
-
-            if (nums[m] >= target) {
-                if (nums[m] == target) ans = m;
-                r = m - 1;
-            }
-            else {
-                l = m + 1;
-            }
-        }
-        return ans;
-    }
-}
