@@ -1,3 +1,5 @@
+// rows are sorted and columns are sorted
+
 import java.util.Scanner;
 
 public class BinarySearch2D {
