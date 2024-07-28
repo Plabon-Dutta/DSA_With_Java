@@ -11,7 +11,16 @@ public class BubbleSort {
         }
 
         bubble_sort_Asc(ar, n);
+        for (int i = 0; i < n; i++) {
+            System.out.print(ar[i] + " ");
+        }
+        System.out.println();
+        
         bubble_sort_Desc(ar, n);
+        for (int i = 0; i < n; i++) {
+            System.out.print(ar[i] + " ");
+        }
+        System.out.println();
     }
 
     // bubble sort in Ascending Order
@@ -29,13 +38,9 @@ public class BubbleSort {
 
             if (!flag) break;
         }
-
-        for (int i = 0; i < n; i++) {
-            System.out.print(ar[i] + " ");
-        }
-        System.out.println();
     }
 
+    // bubble sort in Descending Order
     public static void bubble_sort_Desc(int[] ar, int n) {
         for (int i = 0; i < n - 1; i++) {
             boolean flag = false;
@@ -50,10 +55,5 @@ public class BubbleSort {
 
             if (!flag) break;
         }
-
-        for (int i = 0; i < n; i++) {
-            System.out.print(ar[i] + " ");
-        }
-        System.out.println();
     }
 }
